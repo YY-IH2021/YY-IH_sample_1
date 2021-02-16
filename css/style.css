@@ -93,7 +93,7 @@ header {
   /*background:url(../img/top_image.jpg)no-repeat center center/100%;*/
   position: absolute;
   top: 0;
-  width: 100vw;
+  width: 100%;
   z-index: 105;
 }
 
@@ -164,6 +164,7 @@ header a {
 #js_navi.fix {
   position: fixed;
   top: 0;
+  width: 100%;
   background: rgba(0, 0, 0, 0.6);
 }
 
@@ -204,6 +205,7 @@ header a {
 }
 
 .pnavi {
+  /*idth:100%;*/
   padding: 0.5% 0;
   background-color: #4d61a2;
   text-align: center;
@@ -294,13 +296,21 @@ header a {
 .keyvisual_catch {
   font-family: "Times New Roman", "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
   z-index: 102;
-  width: 48%;
-  font-size: 200%;
+  width: 50%;
+  font-size: 210%;
   margin: 0 auto;
   padding: 4% 0;
   color: #ffffff;
   border: 1px solid #ffffff;
   text-align: center;
+}
+
+.keyvisual_catch p {
+  padding: 0 1%;
+}
+
+.keyvisual_catch .decoration_text {
+  font-size: 70%;
 }
 
 /*****************************************************************
@@ -721,6 +731,9 @@ section.sec_4 .btn a:last-of-type {
   }
   .keyvisual_catch {
     font-size: 120%;
+  }
+  .keyvisual_catch .decoration_text {
+    font-size: 20%;
   }
   body {
     min-width: 100vw;
