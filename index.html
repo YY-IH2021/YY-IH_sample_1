@@ -19,7 +19,7 @@
                             <div class="mask">
                             <ul class="cf">
                                 <li><a href="#">会社概要</a></li>
-                                <li><a href="#">商品・<span class="sp_br">サービス案内</span></a></li>
+                                <li><a href="#">商品・<span class="sp_br">サービス</span></a></li>
                                 <li><a href="#">投資家情報</a></li>
                                 <li><a href="#">採用情報</a></li>
                             </ul>
@@ -65,14 +65,14 @@
             </div><!--pnavi-->
         </div>
 
-            <div class="page_title">
-                <h1>採用情報</h1>
-                <p>仕事を通じて実現したいもの、成長したい、社会に貢献したいなど、求める人物像について記述します。</p>
-            </div>
+
         
         </div>
     </div><!--header_screen-->
     </header>
+    <div class="keyvisual">
+        <div class="keyvisual_catch">自分の技術が社会を<br>人を守る</div>
+    </div>
     <main>
         <div class="info cf">
             <div class="wrapper">
@@ -553,16 +553,16 @@
 <script>
 'use strict'
 let navi = document.getElementById('js_navi');
-let page_title = document.getElementsByClassName('page_title');
+let keyvisual = document.getElementsByClassName('keyvisual');
 
 window.addEventListener('scroll',()=>{
     let y = window.scrollY;
     if (y>=1){
        navi.classList.add('fix');
-       page_title[0].classList.add('fix');
+       keyvisual[0].classList.add('fix');
     }else{
         navi.classList.remove('fix');
-        page_title[0].classList.remove('fix');
+        keyvisual[0].classList.remove('fix');
     }
     
 })
